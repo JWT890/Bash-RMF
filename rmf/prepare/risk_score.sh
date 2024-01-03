@@ -21,11 +21,17 @@ function identify_risks() {
 	vulnerabilities=("High" "Medium" "Low")
 	threats=("Active" "Inactive" "Targeted")
 
+	# prints identifying risks
 	echo "Identifying risks..."
+ 	# statement checks for asset in $assets
 	for asset in "${assets[@]}"; do
+ 	    # statement that checks in the field
             for vulnerability in "${vulnerabilites[@]}"; do
+	    	# statement that checks in the field
 		for threat in "${threats[@]}"; do
+  		    # statement that checks for if the field is high and threat is Active
 		    if [ "$vulnerability" == "High" ] || [ "threat" == "Active" ]; then
+      			# prints that the Potential risk is based on certain conditions
 			echo "Potential risk detected: $asset - Vulnerability: $vulnerability, Threat: $threat"
 		    fi
 		done
@@ -45,13 +51,20 @@ function prioritize_risks() {
 	echo "Prioritizing risks:"
 	# looks through the simulated scores
 	for score in "${sorted_risk_scores[@]}"; do
+ 	    # prints that a specifc score is a high priority
 	    echo "Risk with score $score is a high priority"
 
+     	    # if the score is greater than or equal to 100
 	    if [ "$score" -ge "100" ]; then
+     		# prints taking immediate action for high priority risk
 		echo "Taking immediate action for high priority risk"
+  	    # if the score is greater than or equal to 50
 	    elif [ "$score" -ge "50" ]; then
+     		# prints planning to address soon
 		echo "Planning to address soon"
+  	    # if the score is less than 50
 	    else
+     		# prints Monitoring
 		echo "Monitoring"
 	    fi
 	done
