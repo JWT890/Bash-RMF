@@ -12,10 +12,10 @@ The Monitor step involves watching for any incidents to happen and reporting for
 
 Explainer of script functions here soon:   
 Prepare:  
-riskscore.sh satisifies NIST SP 800-60 and 160
-risk_assess_plan.sh generates and creates an assessment plan
-scope.sh defines the scope through taking certain criteria
-risk_man_strategy creates a risk management strategy based on tolerance, acceptance, and communication
+riskscore.sh satisifies NIST SP 800-60 and 160  
+risk_assess_plan.sh generates and creates an assessment plan  
+scope.sh defines the scope through taking certain criteria  
+risk_man_strategy creates a risk management strategy based on tolerance, acceptance, and communication  
 
 Categorize:  
 infotype.sh and autotypescan.sh satisifies NIST SP 800-160
