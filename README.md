@@ -11,8 +11,8 @@ The Authorize step involves getting a senior management official to allow operat
 The Monitor step involves watching for any incidents to happen and reporting for when one does or if changes occur. 
 
 Explainer of script functions here soon: 
-Prepare:
+Prepare:  
 riskscore.sh satisifies NIST SP 800-60 and 160
 
-Categorize
+Categorize:  
 infotype.sh and autotypescan.sh satisifies NIST SP 800-160
