@@ -1,14 +1,22 @@
 #/bin/bash
 
+# prints the name of the application
 echo "Security Assessment Plan (SAP) Generator"
 
+# asks the user for input and reads the user input for the name
 read -p "Enter the name of the assessment: " assessment_name
+# asks the user for input and reads the user input for the assessment
 read -p "Enter the scope of the assessment (separated by commas): " scope
+# asks the user for input and reads the user input for the objectives
 read -p "Enter the objectives of thea assessment (separated by commas): " objectives
+# asks the user for input and reads the user input for the team member names
 read -p "Enter the names of the assessment team members (separated by commas): " team_members
+# asks the user for input and reads the user input for the state date in YYYY-MM-DD format
 read -p "Enter the start date of the assessment (YYYY-MM-DD): " start_date
+# asks the user for input and reads the user input for the end date in YYYY-MM-DD format
 read -p "Enter the expected end date of of the assessment (YYYY-MM-DD): " end_date
 
+# creates the SAP document in EOF and displays the user input in the respective placeholders
 cat << EOF > "$assessment_name"_Security_Assessment_Plan.txt
 
 Assessment Name: $assessment_name
@@ -51,4 +59,5 @@ End Date: $end_date
 
 EOF
 
+# prints the document has been generated
 echo "Security Assessment Plan generated"
