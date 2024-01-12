@@ -18,4 +18,8 @@ scope.sh defines the scope through taking certain criteria
 risk_man_strategy creates a risk management strategy based on tolerance, acceptance, and communication  
 
 Categorize:  
-infotype.sh and autotypescan.sh satisifies NIST SP 800-160
+infotype.sh and autotypescan.sh satisifies NIST SP 800-160  
+
+Select:  
+contin_monit.sh script creates a Continous Monitoring document to define/select a strategy regarding monitoring  
+control_base.sh script creates a Controls Baseline document determined by asking the user to select which baseline they want to have from either NIST, CIS, or ISO
