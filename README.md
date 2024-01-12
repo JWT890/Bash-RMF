@@ -19,6 +19,9 @@ risk_man_strategy creates a risk management strategy based on tolerance, accepta
 
 Categorize:  
 infotype.sh and autotypescan.sh satisifies NIST SP 800-160  
+infotype.sh script has the user choose a file to categorize based on levels and classification type  
+autotypescan.sh script has the user enter either a file or directory to scan based on certain keywords such as Unclassified and Public  
+log_monit.sh script checks the syslog status using systemctl and prints it status and prints the contents of the logrotate.conf file
 
 Select:  
 contin_monit.sh script creates a Continous Monitoring document to define/select a strategy regarding monitoring  
